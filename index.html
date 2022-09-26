@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <link
+    
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <section class="vh-100" style="background-color: #4B515D;">
+        <div class="container py-5 h-100">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-6 col-lg-6 ">
+      
+              <div class="card" style="color: #4B515D; border-radius: 35px;">
+                <div class="card-body p-4">
+      
+                    <form class="search-form" id="search-form">
+                        <div class="row">
+                          <div class="col-9">
+                            <input
+                            type="search"
+                            placeholder="Type a city.."
+                            autofocus="on"
+                            autocomplete="off"
+                            id="city-input"
+                            class="form-control shadow-sm"
+                            />
+                          </div>
+                         
+                          <div class="col-3">
+                            <input
+                              type="submit"
+                              value="Search"
+                              class="form-control btn btn-primary shadow-sm"
+                              
+                            />
+                          </div>
+                        </div>
+                      </form>
+                      <h1 id="city" class="d-flex flex-column text-center mt-2 mb-4">
+                      </h1>
+                  <div class="container text-center">
+                    <div class="row small">
+                      <div class="col-12">
+                        <p id="date"></p>
+                      </div>
+                      <div class="col-2">
+                  
+                      </div>
+                      <div class="col-3" id="date">
+                        <p id="date"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+      
+                  <div id=card class="card rounded-circle d-flex justify-content-center align-items-center mx-auto" style="width: 18rem;">
+                    <div class="card-body ">
+                        <p class="card-text text-center"> <b><span class="temperature" id="temperature">19</span</b>
+                          <span class="units">°C</span> </p>
+                      <h5 class="card-title text-center "><img src="https://hotemoji.com/images/dl/q/cloud-with-lightning-emoji-by-twitter.png"
+                        width="100px"></h5>
+                        <p id="description" class="card-text text-center"> stormy</p>
+                    </div>
+                  </div>
+      
+                  <div class="container text-center">
+                    <div class="row">
+                      <span id="humidity" class="col order-last">
+                        85%
+                      </span>
+                      <div class="col">
+                        
+                      </div>
+                      <span id="wind"  class="col order-first">
+                        60 m/hr
+                      </span>
+                    </div>
+                  </div>
+                  <br>
+
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        mon
+                      </div>
+                      <div class="col">
+                        tues
+                      </div>
+                      <div class="col">
+                        wed
+                      </div>
+                      <div class="col">
+                        thurs
+                      </div>
+                      <div class="col">
+                        fri
+                      </div>
+                      <div class="col">
+                        sat
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        🌧️
+                      </div>
+                      <div class="col">
+                        🌧️
+                      </div>
+                      <div class="col">
+                        🌧️
+                      </div>
+                      <div class="col">
+                        🌦️
+                      </div>
+                      <div class="col">
+                        ⛅
+                      </div>
+                      <div class="col">
+                        ☁️
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="container text-center">
+                    <div class="row" id="temperature">
+                      <div class="col">
+                        67°
+                      </div>
+                      <div class="col">
+                        67°
+                      </div>
+                      <div class="col">
+                        65°
+                      </div>
+                      <div class="col">
+                        68°
+                      </div>
+                      <div class="col">
+                        72°
+                      </div>
+                      <div class="col">
+                        70°
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    <script src="src/index.js"></script>
+  </body>
+</html>
